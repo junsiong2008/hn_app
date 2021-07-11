@@ -8,10 +8,9 @@ This Flutter project is a HackerNews reader app developed live on The Boring Flu
 </br>  
 
 ## The Flutter Boring Development Show on YouTube
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CPmN4-i9zC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-*Check out their YouTube playlist <a href="https://www.youtube.com/watch?v=yr8F2S3Amas&list=PLOU2XLYxmsIK0r_D-zWcmJ1plIcDNnRkK">here</a>.*
+[![Boring Show Thumbnail](https://i.ytimg.com/vi/yr8F2S3Amas/maxresdefault.jpg)](https://www.youtube.com/watch?v=yr8F2S3Amas&list=PLOU2XLYxmsIK0r_D-zWcmJ1plIcDNnRkK)
 </br>
+
 
 ## Prerequisite  
 This project is developed using the following SDK:  
