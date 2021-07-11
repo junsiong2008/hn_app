@@ -39,6 +39,7 @@ The source code for each episode is oraganized in each branch as follow:
 Branch Name | Episode Video | 
 --- | --- | 
 `pilot_episode`  | https://youtu.be/yr8F2S3Amas
+
 *To be updated as I code along*
 
 <br/>
