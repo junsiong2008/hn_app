@@ -35,10 +35,10 @@ To install and run this application:
 The source code for each episode is oraganized in each branch as follow:  
 
 
-Branch Name | Episode Video | 
---- | --- | 
-`pilot_episode`  | https://youtu.be/yr8F2S3Amas
-
+Branch Name | Topic | Episode Video | 
+--- | --- | --- |
+`pilot_episode`  | Pilot Episode | https://youtu.be/yr8F2S3Amas
+`ep2` | Testing, JSON serialization, and immutables | https://youtu.be/TiCA0CEePyE
 *To be updated as I code along*
 
 <br/>
