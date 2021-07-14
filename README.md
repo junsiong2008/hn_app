@@ -39,6 +39,7 @@ Branch Name | Topic | Episode Video |
 --- | --- | --- |
 `pilot_episode`  | Pilot Episode | https://youtu.be/yr8F2S3Amas
 `ep2` | Testing, JSON serialization, and immutables | https://youtu.be/TiCA0CEePyE
+`ep3` | Networking and FutureBuilder | https://youtu.be/rfagvy5xCW0
 
 *To be updated as I code along*
 
