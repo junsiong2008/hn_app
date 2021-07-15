@@ -1,7 +1,6 @@
 import 'dart:collection';
 import 'package:flutter/material.dart';
 import 'package:hn_app/src/article.dart';
-import 'package:http/http.dart' as http;
 import 'package:url_launcher/url_launcher.dart';
 import 'package:hn_app/src/hn_bloc.dart';
 
@@ -23,7 +22,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(
-        title: 'Flutter Demo Home Page',
+        title: 'Flutter Hacker News',
         bloc: bloc,
       ),
     );
@@ -53,6 +52,26 @@ class _MyHomePageState extends State<MyHomePage> {
         builder: (context, snapshot) => ListView(
           children: snapshot.data!.map(_buildItem).toList(),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0,
+        items: [
+          BottomNavigationBarItem(
+            label: 'Top Stories',
+            icon: Icon(Icons.arrow_drop_up),
+          ),
+          BottomNavigationBarItem(
+            label: 'New Stories',
+            icon: Icon(Icons.new_releases),
+          ),
+        ],
+        onTap: (index) {
+          if (index == 0) {
+            widget.bloc.storiesType.add(StoriesType.topStories);
+          } else {
+            widget.bloc.storiesType.add(StoriesType.newStories);
+          }
+        },
       ),
     );
   }
