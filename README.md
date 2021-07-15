@@ -3,7 +3,7 @@
 <br/>
 
 # hn_app
-This Flutter project is a HackerNews reader app developed live on The Boring Flutter Development Show where Andrew and Filip build an app from scratch in Flutter on YouTube. This repository is for storing code as I code along with the course. The source code in each episode is broken down into separate branch on GitHub. The source code might differ slightly from the  code shown in the video as this project uses a newer version of Flutter.
+This Flutter project is a HackerNews reader app developed live on The Boring Flutter Development Show where Andrew Filip, and Matt build an app from scratch in Flutter on YouTube. This repository is for storing code as I code along with the course. The source code in each episode is broken down into separate branch on GitHub. The source code might differ slightly from the  code shown in the video as this project uses a newer version of Flutter.
 
 </br>  
 
