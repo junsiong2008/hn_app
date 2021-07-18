@@ -41,6 +41,7 @@ Branch Name | Topic | Episode Video |
 `ep2` | Testing, JSON serialization, and immutables | https://youtu.be/TiCA0CEePyE
 `ep3` | Networking and FutureBuilder | https://youtu.be/rfagvy5xCW0
 `ep4` | Technical Debt and Streams/BLoC | https://youtu.be/fahC3ky_zW0
+`ep5` | Adding Animations to Your App | https://youtu.be/dNSteCm-cEY
 
 *To be updated as I code along*
 

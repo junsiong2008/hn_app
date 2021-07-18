@@ -7,13 +7,18 @@ import 'package:http/http.dart' as http;
 enum StoriesType { topStories, newStories }
 
 class HackerNewsBloc {
+  Stream<bool> get isLoading => _isLoadingSubject.stream;
+
+  // final _isLoadingSubject = BehaviorSubject<bool>(seedValue: false);
+  final _isLoadingSubject = BehaviorSubject<bool>.seeded(false);
+
   final _articlesSubject = BehaviorSubject<UnmodifiableListView<Article?>>();
 
   var _articles = <Article?>[];
 
-  Sink<StoriesType> get storiesType => _storiesTypeController.sink;
-
   final _storiesTypeController = StreamController<StoriesType>();
+
+  Sink<StoriesType> get storiesType => _storiesTypeController.sink;
 
   static List<int> _newIds = [
     27799859,
@@ -43,10 +48,11 @@ class HackerNewsBloc {
     });
   }
 
-  _getArticlesAndUpdate(List<int> ids) {
-    _updateArticles(ids).then((_) {
-      _articlesSubject.add(UnmodifiableListView(_articles));
-    });
+  _getArticlesAndUpdate(List<int> ids) async {
+    _isLoadingSubject.add(true);
+    await _updateArticles(ids);
+    _articlesSubject.add(UnmodifiableListView(_articles));
+    _isLoadingSubject.add(false);
   }
 
   Stream<UnmodifiableListView<Article?>> get articles =>
